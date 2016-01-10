@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#10AEE7" >
+
+        <Button
+            android:id="@+id/choose_another_area"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/choose_area" />
+
+        <TextView
+            android:id="@+id/title_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="六安"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/weather_refresh"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/refresh" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ccc"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/time_when"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="right|center"
+            android:text="今天18:00发布"
+            android:textColor="#aff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_showInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/time_day"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="48dp"
+                android:gravity="center"
+                android:text="2016年1月7日"
+                android:textColor="#ffd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weather_state"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center"
+                android:text="小雨转中雨"
+                android:textColor="#ffa"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/weather_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="3℃"
+                    android:textColor="#cc0"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="~"
+                    android:textColor="#fff"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/weather_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="5℃"
+                    android:textColor="#fad"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
